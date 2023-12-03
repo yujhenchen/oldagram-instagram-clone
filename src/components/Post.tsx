@@ -57,7 +57,7 @@ export default function Post({
   ].map((data) => <ActionButton key={data.buttonID} {...data} />);
 
   return (
-    <div onDoubleClick={() => onLike(id)}>
+    <div onDoubleClick={() => onLike(id)} className="bg-white">
       <PostHeader name={name} location={location} avatar={avatar} />
       <div className="w-375px h-375px overflow-hidden">
         <img
