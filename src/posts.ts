@@ -13,20 +13,20 @@ export const posts: PostData[] = [
         likes: 21
     },
     {
-        name: "Gustave Courbet",
+        name: "Picasso",
         username: "gus1819",
         location: "Ornans, France",
-        avatar: "images/avatar-courbet.jpg",
-        post: "images/post-courbet.jpg",
+        avatar: "images/avatar-picasso.jpg",
+        post: "images/post-picasso.jpg",
         comments: [{ username: 'vincey1853', comment: "i'm feelin a bit stressed tbh" }],
         likes: 4
     },
     {
-        name: "Joseph Ducreux",
+        name: "Leonardo",
         username: "jd1735",
         location: "Paris, France",
-        avatar: "images/avatar-ducreux.jpg",
-        post: "images/post-ducreux.jpg",
+        avatar: "images/avatar-leonardo.jpg",
+        post: "images/post-leonardo.jpg",
         comments: [{
             username: 'gus1819',
             comment: "gm friends! which coin are YOU stacking up today?? post below and WAGMI!"
