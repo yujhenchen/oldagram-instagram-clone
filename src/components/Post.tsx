@@ -45,7 +45,7 @@ export default function Post({
   return (
     <div>
       <PostHeader name={name} location={location} avatar={avatar} />
-      <div className="w-375px h-375px">
+      <div className="w-375px h-375px rounded-full">
         <img
           src={post}
           alt={`${name}'s post. User Name: ${username}`}

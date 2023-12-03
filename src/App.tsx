@@ -1,7 +1,7 @@
 // import { useState } from "react";
 // import reactLogo from "./assets/react.svg";
 // import viteLogo from "/vite.svg";
-import "./App.css";
+// import "./App.css";
 import Header from "./components/Header";
 import Post from "./components/Post";
 import { posts } from "./posts";
@@ -13,8 +13,12 @@ function App() {
   const header = (
     <>
       <h1 className="">Oldagram</h1>
-      <div className="w-34px h-34px">
-        <img src={user.avatar} alt={user.name} className="w-full h-full" />
+      <div className="w-34px h-34px rounded-full overflow-hidden">
+        <img
+          src={user.avatar}
+          alt={user.name}
+          className="w-full h-full object-cover"
+        />
       </div>
     </>
   );
