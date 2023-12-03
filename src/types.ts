@@ -1,4 +1,5 @@
 export type PostData = {
+    id: string;
     name: string;
     username: string;
     location: string;

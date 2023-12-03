@@ -3,7 +3,10 @@ import PostHeader from "./PostHeader";
 import Comment from "./Comment";
 import ActionButton from "./ActionButton";
 
+type Props = PostData & { onLike: (postID: string) => void };
+
 export default function Post({
+  id,
   name,
   username,
   location,
@@ -11,7 +14,8 @@ export default function Post({
   post,
   comments,
   likes,
-}: PostData) {
+  onLike,
+}: Props) {
   const commentsEls: JSX.Element[] = comments.map((comment, index) => (
     <Comment
       key={`${comment.username}_${index}`}
@@ -21,7 +25,13 @@ export default function Post({
   ));
 
   const onClickAction = (buttonID: string): void => {
-    console.log(buttonID);
+    switch (buttonID) {
+      case "like-btn":
+        onLike(id);
+        break;
+      default:
+        break;
+    }
   };
 
   const actionButtons: JSX.Element[] = [
@@ -43,7 +53,7 @@ export default function Post({
   ].map((data) => <ActionButton key={data.buttonID} {...data} />);
 
   return (
-    <div>
+    <div onDoubleClick={() => onLike(id)}>
       <PostHeader name={name} location={location} avatar={avatar} />
       <div className="w-375px h-375px overflow-hidden">
         <img
@@ -60,7 +70,7 @@ export default function Post({
 
         <div>
           <p className="font-bold text-13px">
-            <span>{likes}</span>likes
+            <span className="mr-4px">{likes}</span>likes
           </p>
         </div>
 

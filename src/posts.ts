@@ -2,6 +2,7 @@ import { PostData } from "./types";
 
 export const posts: PostData[] = [
     {
+        id: '1',
         name: "Vincent van Gogh",
         username: "vincey1853",
         location: "Zundert, Netherlands",
@@ -13,6 +14,7 @@ export const posts: PostData[] = [
         likes: 21
     },
     {
+        id: '2',
         name: "Picasso",
         username: "gus1819",
         location: "Ornans, France",
@@ -22,6 +24,7 @@ export const posts: PostData[] = [
         likes: 4
     },
     {
+        id: '3',
         name: "Leonardo",
         username: "jd1735",
         location: "Paris, France",
