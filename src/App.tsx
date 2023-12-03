@@ -2,12 +2,10 @@ import { useState } from "react";
 import Header from "./components/Header";
 import Post from "./components/Post";
 import { posts } from "./posts";
-import { PostData } from "./types";
-
-type PostItem = PostData & { liked: boolean };
+import { PostCardData, PostData } from "./types";
 
 function App() {
-  const [postsList, setPostsList] = useState<PostItem[]>(
+  const [postsList, setPostsList] = useState<PostCardData[]>(
     [...posts].map((post) => ({ ...post, liked: false }))
   );
 
@@ -45,7 +43,6 @@ function App() {
             key={`${post.username}_${index}`}
             {...post}
             onLike={onLikePost}
-            liked={post.liked}
           />
         ))}
       </section>

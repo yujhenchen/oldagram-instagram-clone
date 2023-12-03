@@ -1,11 +1,10 @@
-import { PostData } from "../types";
+import { PostCardData } from "../types";
 import PostHeader from "./PostHeader";
 import Comment from "./Comment";
 import ActionButton from "./ActionButton";
 
-type Props = PostData & {
+type Props = PostCardData & {
   onLike: (postID: string) => void;
-  liked: boolean;
 };
 
 export default function Post({
@@ -17,8 +16,8 @@ export default function Post({
   post,
   comments,
   likes,
-  onLike,
   liked,
+  onLike,
 }: Props) {
   const likedStyle = "fa-solid color-red";
 

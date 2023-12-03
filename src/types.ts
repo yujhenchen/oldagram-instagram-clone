@@ -7,7 +7,11 @@ export type PostData = {
     post: string;
     comments: CommentData[];
     likes: number;
-}
+};
+
+export type PostCardData = PostData & {
+    liked: boolean;
+};
 
 export type PostHeaderData = Pick<PostData, 'name' | 'location' | 'avatar'>;
 
