@@ -45,15 +45,15 @@ export default function Post({
   return (
     <div>
       <PostHeader name={name} location={location} avatar={avatar} />
-      <div className="w-375px h-375px rounded-full">
+      <div className="w-375px h-375px overflow-hidden">
         <img
           src={post}
           alt={`${name}'s post. User Name: ${username}`}
-          className="w-full h-full"
+          className="w-full h-full object-cover"
         />
       </div>
 
-      <div className="w-full h-full px-10px py-20px grid grid-col-1 gap-y-14px">
+      <div className="w-full px-10px py-20px grid grid-col-1 gap-y-14px">
         <div className="w-104px h-22px flex place-content-between">
           {actionButtons}
         </div>
@@ -63,6 +63,7 @@ export default function Post({
             <span>{likes}</span>likes
           </p>
         </div>
+
         <div>{commentsEls}</div>
       </div>
     </div>
