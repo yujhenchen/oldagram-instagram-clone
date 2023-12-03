@@ -14,3 +14,9 @@ export type CommentData = {
     username: string;
     comment: string;
 };
+
+export type ActionButtonData = {
+    buttonID: string;
+    iconClass: string;
+    onClick: (buttonID: string) => void;
+};

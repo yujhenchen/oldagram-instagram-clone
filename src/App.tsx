@@ -4,7 +4,7 @@
 import "./App.css";
 import Header from "./components/Header";
 import Post from "./components/Post";
-import { posts } from "./data";
+import { posts } from "./posts";
 import { PostData } from "./types";
 
 function App() {
@@ -13,19 +13,21 @@ function App() {
   const header = (
     <>
       <h1 className="">Oldagram</h1>
-      <div>
-        <img src={user.avatar} alt={user.name} />
+      <div className="w-34px h-34px">
+        <img src={user.avatar} alt={user.name} className="w-full h-full" />
       </div>
     </>
   );
 
   return (
-    <>
+    <main className="w-375px mx-auto">
       <Header children={header} />
-      {posts.map((post, index) => (
-        <Post key={`${post.username}_${index}`} {...post} />
-      ))}
-    </>
+      <section className="grid grid-col-1 gap-y-28px">
+        {posts.map((post, index) => (
+          <Post key={`${post.username}_${index}`} {...post} />
+        ))}
+      </section>
+    </main>
   );
 }
 
