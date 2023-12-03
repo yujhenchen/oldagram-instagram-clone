@@ -11,7 +11,7 @@ function App() {
 
   const user: PostData = postsList[0];
 
-  const header = (
+  const header: JSX.Element = (
     <>
       <h1 className="">Oldagram</h1>
       <div className="w-34px h-34px rounded-full overflow-hidden">
@@ -24,7 +24,7 @@ function App() {
     </>
   );
 
-  const onLikePost = (postID: string) => {
+  const onLikePost = (postID: string): void => {
     setPostsList((ls) =>
       ls.map((post) =>
         post.id === postID
