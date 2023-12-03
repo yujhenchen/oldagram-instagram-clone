@@ -28,7 +28,7 @@ function App() {
     setPostsList((ls) =>
       ls.map((post) =>
         post.id === postID
-          ? { ...post, likes: post.likes++, liked: true }
+          ? { ...post, likes: post.likes + 1, liked: true }
           : post
       )
     );
