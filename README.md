@@ -90,6 +90,9 @@ My solo project - Oldagram (Instagram Clone). Built with Vite, React, TypeScript
 * [![FontAwesome][FontAwesome]][FontAwesome-url]
 * [![UnoCSS][UnoCSS]][UnoCSS-url]
 * [![Firebase][Firebase]][Firebase-url]
+* [![ESLint][ESLint]][ESLint-url]
+* [![Prettier][Prettier]][Prettier-url]
+* [Husky][Husky-url]
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -247,3 +250,8 @@ Project Link: [https://github.com/yujhenchen/oldagram-instagram-clone](https://g
 [UnoCSS-url]: https://unocss.dev/
 [Firebase]: https://img.shields.io/badge/firebase-%23039BE5.svg?style=for-the-badge&logo=firebase
 [Firebase-url]: https://firebase.google.com/
+[ESLint]:https://img.shields.io/badge/ESLint-4B3263?style=for-the-badge&logo=eslint&logoColor=white
+[ESLint-url]:https://eslint.org/
+[Prettier]: https://ziadoua.github.io/m3-Markdown-Badges/badges/Prettier/prettier1.svg
+[Prettier-url]: https://prettier.io/
+[Husky-url]: https://typicode.github.io/husky/
