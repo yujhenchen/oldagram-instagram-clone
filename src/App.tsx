@@ -37,7 +37,7 @@ function App() {
   };
 
   return (
-    <main className="w-375px mx-auto">
+    <main className="w-375px mx-auto font-sans">
       <Header children={header} />
       <section className="grid grid-col-1 gap-y-28px">
         {postsList.map((post, index) => (

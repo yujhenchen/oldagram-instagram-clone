@@ -917,7 +917,7 @@
     "@unocss/preset-wind" "0.57.7"
     "@unocss/rule-utils" "0.57.7"
 
-"@unocss/preset-web-fonts@0.57.7":
+"@unocss/preset-web-fonts@0.57.7", "@unocss/preset-web-fonts@^0.57.7":
   version "0.57.7"
   resolved "https://registry.yarnpkg.com/@unocss/preset-web-fonts/-/preset-web-fonts-0.57.7.tgz#ac98f20b49ba6044982519100eaf676d9dab8923"
   integrity sha512-wBPej5GeYb0D/xjMdMmpH6k/3Oe1ujx9DJys2/gtvl/rsBZpSkoWcnl+8Z3bAhooDnwL2gkJCIlpuDiRNtKvGA==
