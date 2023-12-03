@@ -13,7 +13,7 @@ export default function ActionButton({
         onClick((event.currentTarget as HTMLButtonElement).id)
       }
     >
-      <i className={`fa-regular ${iconClass} w-full h-full align-middle`} />
+      <i className={`fa-solid ${iconClass} w-full h-full align-middle`} />
     </button>
   );
 }

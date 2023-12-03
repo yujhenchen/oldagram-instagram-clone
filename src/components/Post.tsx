@@ -3,7 +3,10 @@ import PostHeader from "./PostHeader";
 import Comment from "./Comment";
 import ActionButton from "./ActionButton";
 
-type Props = PostData & { onLike: (postID: string) => void };
+type Props = PostData & {
+  onLike: (postID: string) => void;
+  likedStyle: string;
+};
 
 export default function Post({
   id,
@@ -15,6 +18,7 @@ export default function Post({
   comments,
   likes,
   onLike,
+  likedStyle,
 }: Props) {
   const commentsEls: JSX.Element[] = comments.map((comment, index) => (
     <Comment
@@ -37,7 +41,7 @@ export default function Post({
   const actionButtons: JSX.Element[] = [
     {
       buttonID: "like-btn",
-      iconClass: "fa-heart",
+      iconClass: `fa-heart ${likedStyle}`,
       onClick: onClickAction,
     },
     {
