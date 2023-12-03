@@ -4,11 +4,11 @@ import Post from "./components/Post";
 import { posts } from "./posts";
 import { PostData } from "./types";
 
-type PostItem = PostData & { likedStyle: string };
+type PostItem = PostData & { liked: boolean };
 
 function App() {
   const [postsList, setPostsList] = useState<PostItem[]>(
-    [...posts].map((post) => ({ ...post, likedStyle: "" }))
+    [...posts].map((post) => ({ ...post, liked: false }))
   );
 
   const user: PostData = postsList[0];
@@ -30,7 +30,7 @@ function App() {
     setPostsList((ls) =>
       ls.map((post) =>
         post.id === postID
-          ? { ...post, likes: post.likes++, likedStyle: "color-red" }
+          ? { ...post, likes: post.likes++, liked: true }
           : post
       )
     );
@@ -45,7 +45,7 @@ function App() {
             key={`${post.username}_${index}`}
             {...post}
             onLike={onLikePost}
-            likedStyle={post.likedStyle}
+            liked={post.liked}
           />
         ))}
       </section>

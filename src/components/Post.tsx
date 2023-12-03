@@ -5,7 +5,7 @@ import ActionButton from "./ActionButton";
 
 type Props = PostData & {
   onLike: (postID: string) => void;
-  likedStyle: string;
+  liked: boolean;
 };
 
 export default function Post({
@@ -18,8 +18,10 @@ export default function Post({
   comments,
   likes,
   onLike,
-  likedStyle,
+  liked,
 }: Props) {
+  const likedStyle = "fa-solid color-red";
+
   const commentsEls: JSX.Element[] = comments.map((comment, index) => (
     <Comment
       key={`${comment.username}_${index}`}
@@ -41,17 +43,17 @@ export default function Post({
   const actionButtons: JSX.Element[] = [
     {
       buttonID: "like-btn",
-      iconClass: `fa-heart ${likedStyle}`,
+      iconClasses: `fa-regular fa-heart ${liked ? likedStyle : ""}`,
       onClick: onClickAction,
     },
     {
       buttonID: "comment-btn",
-      iconClass: "fa-comment-dots",
+      iconClasses: "fa-regular fa-comment-dots",
       onClick: onClickAction,
     },
     {
       buttonID: "send-btn",
-      iconClass: "fa-paper-plane",
+      iconClasses: "fa-regular fa-paper-plane",
       onClick: onClickAction,
     },
   ].map((data) => <ActionButton key={data.buttonID} {...data} />);

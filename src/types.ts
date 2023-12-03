@@ -18,6 +18,6 @@ export type CommentData = {
 
 export type ActionButtonData = {
     buttonID: string;
-    iconClass: string;
+    iconClasses: string;
     onClick: (buttonID: string) => void;
 };
