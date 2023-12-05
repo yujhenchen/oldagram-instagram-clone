@@ -89,7 +89,7 @@ My solo project - Oldagram (Instagram Clone). Built with Vite, React, TypeScript
 * [![TypeScript]][TypeScript]
 * [![FontAwesome][FontAwesome]][FontAwesome-url]
 * [![UnoCSS][UnoCSS]][UnoCSS-url]
-* [![Firebase][Firebase]][Firebase-url]
+<!-- * [![Firebase][Firebase]][Firebase-url] -->
 * [![ESLint][ESLint]][ESLint-url]
 * [![Prettier][Prettier]][Prettier-url]
 * [Husky][Husky-url]
@@ -112,20 +112,6 @@ To get a local copy up and running follow these simple example steps.
   ``` -->
 
 ### Installation
-<!-- 
-1. Get a free API Key at [https://example.com](https://example.com)
-2. Clone the repo
-   ```sh
-   git clone https://github.com/yujhenchen/oldagram-instagram-clone.git
-   ```
-3. Install NPM packages
-   ```sh
-   npm install
-   ```
-4. Enter your API in `config.js`
-   ```js
-   const API_KEY = 'ENTER YOUR API';
-   ``` -->
 Install packages
 ```sh
 yarn
@@ -155,8 +141,8 @@ _For more examples, please refer to the [Documentation](https://example.com)_
 ## Roadmap
 
 - [x] Set up ESLint, Husky, Prettier and lint-staged
-- [ ] Set up firebase
-- [ ] Load posts from firebase
+<!-- - [ ] Set up firebase
+- [ ] Load posts from firebase -->
 - [x] Click like to like the post
 - [x] Double click to like the post
 - [ ] Remove like when the post is liked
@@ -254,8 +240,8 @@ Project Link: [https://github.com/yujhenchen/oldagram-instagram-clone](https://g
 [FontAwesome-url]: https://fontawesome.com/
 [UnoCSS]:https://img.shields.io/badge/unocss-333333.svg?style=for-the-badge&logo=unocss&logoColor=white
 [UnoCSS-url]: https://unocss.dev/
-[Firebase]: https://img.shields.io/badge/firebase-%23039BE5.svg?style=for-the-badge&logo=firebase
-[Firebase-url]: https://firebase.google.com/
+<!-- [Firebase]: https://img.shields.io/badge/firebase-%23039BE5.svg?style=for-the-badge&logo=firebase
+[Firebase-url]: https://firebase.google.com/ -->
 [ESLint]:https://img.shields.io/badge/ESLint-4B3263?style=for-the-badge&logo=eslint&logoColor=white
 [ESLint-url]:https://eslint.org/
 [Prettier]: https://ziadoua.github.io/m3-Markdown-Badges/badges/Prettier/prettier1.svg
