@@ -141,10 +141,10 @@ _For more examples, please refer to the [Documentation](https://example.com)_
 ## Roadmap
 
 - [x] Set up ESLint, Husky, Prettier and lint-staged
-<!-- - [ ] Set up firebase
-- [ ] Load posts from firebase -->
 - [x] Click like to like the post
 - [x] Double click to like the post
+- [ ] Set up firebase
+- [ ] Load posts from firebase
 - [ ] Remove like when the post is liked
 - [ ] A user can only like a post once, a user can like multiple posts, and a post can be liked by multiple users
 
